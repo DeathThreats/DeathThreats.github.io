@@ -1,0 +1,22 @@
+.container-body {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.content {
+    margin-top: 8rem;
+}
+
+.content p {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.expression {
+    display: inline-block;
+}
+
+.stscod {
+    color: rgb(233, 0, 0);
+}
