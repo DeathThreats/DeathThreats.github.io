@@ -27,7 +27,7 @@ function Home() {
     const [data2, setData2] = useState([]);
 
     const fetchData = async () => {
-        const url = ['https://api.github.com/repos/deaththreats/react-app', 'https://api.github.com/repos/deaththreats/PHPLoginSystem'];
+        const url = ['https://api.github.com/repos/deaththreats/DeathThreats.github.io', 'https://api.github.com/repos/deaththreats/PHPLoginSystem'];
         const firstData = await fetch(url[0]);
         const secondData = await fetch(url[1]);
         let data1 = await firstData.json();
