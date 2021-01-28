@@ -187,6 +187,10 @@ nav {
 }
 
 @media screen and (max-width:990px) {
+  .viewMoreBtn {
+    bottom: -10px;
+  }
+
   .heading-img{
     width: 90%;
     margin: auto;
@@ -325,6 +329,10 @@ font-family: sans-serif;
 }
 
 @media screen and (max-width:991px){
+  .languages-img-holder .col-md-4:hover {
+    transform: scale(.8) !important;
+  }
+
   .languages h1 {
     font-size: 2.7rem;
   }
@@ -391,6 +399,18 @@ tbody tr td:nth-child(2) {
 
 .contact{
   padding-top: 3.5rem;
+}
+
+.contact h1 {
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width:991px){

@@ -88,7 +88,7 @@ function Home() {
                         Hi!, I'm Augustin Nalzaro - a 'sometimes' web developer and currently a student at Indiana Aerospace University, majoring in Bachelor of Science in Aircraft Maintenance Technology. I have always admired aviation-related things, topics, videos and for the longest time, I've always been passionate about flying.<br/><br/>
                         I consider coding as a hobby and I've worked from front to back-end web development using the good old HTML, CSS and JavaScript combo, the much more advanced VueJS, Facebook's React, and a little bit of AngularJS for the front-end, then I started implementing the back-end using PHP and NodeJS, then MYSQL or MongoDB for Databases.
                         </p>
-                        <div className="col-lg-3 ProfileImg-holder">
+                        <div className="col-lg-3 ProfileImg-holder mt-3">
                             <img src={ProfileImg} className="ProfileImg" alt="Profile"/>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ function Home() {
                 <div className="container services">
                     <div className="row text-justify">
                         <div className="col-lg-4 video_loop flexed-center user-select-none">
-                            <video src={mail_loop} loop autoPlay width="100%" />
+                            <video src={mail_loop} loop autoPlay width="100%" muted playsInline/>
                         </div>
                         <div className="col-lg-1"></div>
                         <div className="col-lg-6">
