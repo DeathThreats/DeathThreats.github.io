@@ -1,33 +1,40 @@
-import '../styles/App.css';
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { gsap } from "gsap";
 
 function Nav() {
 
-  const NoDecoration = {
-    textDecoration:'none'
-  };
+  window.addEventListener("scroll", function(){
+    const nav = document.querySelector('nav');
+    nav.classList.toggle("sticky", window.scrollY > 0);
+  })
+
+  useEffect(() => {
+    gsap.from(".navbar-container", 1, {
+        ease: "power3.out",
+        x:100,
+        opacity:0
+    });
+}, [])
 
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light border-bottom shadow-sm d-flex align-items-center justify-content-center py-2">
-      <div className="container subNavBrand">
-        <Link to="/" style={NoDecoration}>
-          <div className="navbar-brand"  data-toggle="tooltip" data-placement="bottom"title="Home">Augustin Nalzaro</div> 
-        </Link>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
+  <nav className="navbar fixed-top navbar-expand-lg p-0">
+    <div className="container navbar-container">
+      <div className="container-md">
+        <Link to="/" className="navbar-title" data-toggle="tooltip" data-placement="bottom" title="Home">Augustin Nalzaro</Link> 
+        <button className="navbar-toggler navbar-btn" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"aria-expanded="false" aria-label="Toggle navigation">
+          <i className="fas fa-bars"></i>
         </button>
       </div>
-      <div className="collapse navbar-collapse subNavItems" id="navbarText">
-          <ul className="navbar-nav">
-            <Link to="/software" style={NoDecoration}>
-              <li className="nav-item px-md-2" data-toggle="tooltip" data-placement="bottom" title="Software | API"><div className="nav-link">Software</div></li>
-            </Link>
-            <Link to="/contact" style={NoDecoration}>
-              <li className="nav-item px-md-2" data-toggle="tooltip" data-placement="bottom" title="Contact"> <div className="nav-link">Contact</div> </li>
-            </Link>
-          </ul>
+      <div className="collapse navbar-collapse" id="navbarText">
+        <ul className="navbar-nav navbar-items-holder">
+            <li className="nav-item px-md-2" data-toggle="tooltip" data-placement="bottom" title="Software"><Link to="/software" className="navbar-item">Software</Link></li>
+            <li className="nav-item px-md-2" data-toggle="tooltip" data-placement="bottom" title="Contact"><Link to="/contact" className="navbar-item">Contact</Link></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
   );
 }
 

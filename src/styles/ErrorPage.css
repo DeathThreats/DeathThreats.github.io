@@ -1,16 +1,8 @@
-.container-body {
+.error-body {
     height: 100vh;
-    width: 100%;
-    margin: auto;
-}
-
-.content {
-    margin-top: 8rem;
-}
-
-.content p {
-    font-size: 2rem;
-    font-weight: 800;
+    padding-bottom: 2rem;
+    display:flex;
+    align-items: center;
 }
 
 .expression {

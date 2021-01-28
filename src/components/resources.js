@@ -1,4 +1,3 @@
-import '../styles/App.css';
 import { Link } from 'react-router-dom';
 import img2 from '../assets/img2.svg';
 import img3 from '../assets/img3.svg';
@@ -10,13 +9,14 @@ import img8 from '../assets/img8.svg';
 import img9 from '../assets/img9.svg';
 import img10 from '../assets/img10.svg';
 import img11 from '../assets/img11.svg';
+import '../styles/extras/resources.css';
 
 function Resources() {
 
   return (
     <div className="container">
         <div className="jumbotron">
-            <h1 class="display-3 mb-3">Hey There!</h1>
+            <h1 class="display-3">Hey There!</h1>
             <h6>This Page is published but not optimized, designed, formatted, and meant for you to visit. For better experience, please go back</h6>
             <hr/>
             <div className="buttons px-auto">
