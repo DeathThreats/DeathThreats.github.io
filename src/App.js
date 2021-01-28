@@ -12,42 +12,6 @@ import ErrorNotFound from './components/ErrorNotFound';
 import FairUse from './components/FairUse';
 import HashLoader from "react-spinners/HashLoader";
 
-// function App() {
-//   let [loading, setLoading] = useState(true);
-
-//   document.addEventListener('load', () => {
-
-//   })
-
-//   useEffect(() => {
-//     setLoading(false);
-//   }, [])
-//   return (
-//    <div>
-//      {
-//         loading?
-//         <div className="loading">
-//           <HashLoader color={"#13176E"} loading={HashLoader} size={100} />
-//         </div>
-//         :
-//         <Router>
-//           <ScrollToTop />
-//           <Nav />
-//           <Switch>
-//             <Route exact path="/" component={Home} />
-//             <Route exact path="/software" component={Software} />
-//             <Route exact path="/contact" component={Contact} />
-//             <Route exact path="/resources" component={Resources} />
-//             <Route exact path="/fair-use-notice" component={FairUse} />
-//             <Route path="*" component={ErrorNotFound} />
-//           </Switch>
-//           <Footer />
-//         </Router>
-//      }
-//    </div>
-//   );
-// }
-
 function App() {
   let [loading, setLoading] = useState(true);
 
@@ -87,7 +51,5 @@ function App() {
    </div>
   );
 }
-
-
 
 export default App;

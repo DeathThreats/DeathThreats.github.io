@@ -23,7 +23,6 @@ img {
 }
 
 /* Nav Style */
-
 nav {
   transition: .3s;
 }
@@ -188,7 +187,7 @@ nav {
 
 @media screen and (max-width:990px) {
   .viewMoreBtn {
-    bottom: -10px;
+    bottom: -50px;
   }
 
   .heading-img{
@@ -381,19 +380,13 @@ font-family: sans-serif;
 .software ::-webkit-scrollbar {
   width: auto;
   height: 4px;
-  }
-
-/* 
-.fixed-width {
-  width: 400px;
-  display: block;
-  overflow-x: auto; 
-} */
+}
 
 tbody tr td:nth-child(2) {
   overflow-x: auto;
   max-width: 500px;
 }
+
 /* End of Software Style */
 /* Start of Contact Styles */
 
@@ -436,24 +429,6 @@ tbody tr td:nth-child(2) {
   font-family: "Open Sans", sans-serif;
 }
 /* End of Notice Styles */
-/* Start of Projects Styles */
-
-/* .projects {
-  padding: 6rem 0;
-}
-
-.projects h1 {
-  font-weight:200;
-}
-
-.projects-item {
-  border-radius: 5px;
-  margin: 1rem auto;
-  padding: 1.5rem;
-  background-color: rgb(245, 245, 245);
-} */
-
-/* End of Projects Styles */
 /* Start of Footer Styles */
 
 footer {

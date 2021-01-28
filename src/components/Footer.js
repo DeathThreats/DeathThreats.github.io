@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 function Footer() {
-
   return (
     <footer className="pt-5 pb-4">
         <div className="row container mx-auto text-left text-white footer">

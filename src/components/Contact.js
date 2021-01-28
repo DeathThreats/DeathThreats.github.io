@@ -1,5 +1,4 @@
 function Contact() {
-
   return (
   <div className="text-center contact">
     <h1>Loading...</h1>
@@ -8,5 +7,4 @@ function Contact() {
   </div>
   );
 }
-
 export default Contact;
