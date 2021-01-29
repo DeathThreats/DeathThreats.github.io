@@ -24,7 +24,7 @@ function Software() {
   }
 
   return (
-    <div className="container software">
+    <div className="container-fluid software">
       <h1 className="mb-4 display-4 font-weight-bold text-dark software-data">Software Repository</h1>
       <div className="table-responsive-lg software-data">
         <table className="table table-hover text-nowrap">

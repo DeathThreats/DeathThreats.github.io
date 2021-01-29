@@ -375,16 +375,17 @@ font-family: sans-serif;
 .software {
   padding-top: 5.5rem;
   min-height: 100vh;
+  width: 90%;
 }
 
 .software ::-webkit-scrollbar {
   width: auto;
-  height: 4px;
+  height: 3px;
 }
 
-tbody tr td:nth-child(2) {
+.software tbody tr td:nth-child(2) {
   overflow-x: auto;
-  max-width: 500px;
+  max-width: 380px;
 }
 
 /* End of Software Style */

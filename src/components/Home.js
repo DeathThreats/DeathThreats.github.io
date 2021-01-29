@@ -144,7 +144,7 @@ function Home() {
                         <div className="col-lg-1"></div>
                         <div className="col-lg-6">
                             <h1 className="display-4 services-heading">Need my Service?</h1>
-                            <p>Great! I'm always open to business inquiries. To reach me, you can always <LinkToPage to="/contact" data-toggle="tooltip" data-placement="bottom" title="Contact">Contact</LinkToPage> or Message me through my social media accounts. The services offered includes but is not limited to the following:</p><br/>
+                            <p>Great! I'm always open to business inquiries. To reach me, you can always <LinkToPage to="/contact" data-toggle="tooltip" data-placement="bottom" title="contact">contact</LinkToPage> or Message me through my social media accounts. The services offered includes but is not limited to the following:</p><br/>
                             <ol>
                                 <li>Static Website Building (stylish, modern, minimalistic... web design)</li>
                                 <ul>
